@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Phần Ssstutter*/
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#contain{
+    background-color:white;
+    height: 4000px;
+    width: 100%;
+}
+#header{
+    height: 57px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+}
+#header #logo{
+    display: block;
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+
+    /* background: url('C:/Users/Admin/Desktop/học/HK1 năm 2/SSStutter/assets/img/logo.png') top center /cover no-repeat; */
+}
+.logo-img{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+}
+#nav>li{
+    display: inline-block;
+}
+#nav li a{
+    text-decoration: none;
+    color: black;
+}
+#nav li{
+    display: inline-block;
+    padding: 0 35px;
+    line-height: 57px;
+    text-transform: uppercase;
+    
+}
+#nav li:hover{
+    border-bottom: #3b3939 solid 3.5px;
+    transition: all 0.15s;
+    font-weight: 600;
+    font-size: 20px;
+}
+#header .search, .shopping{
+    float: right;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.shopping{
+    position: absolute;
+    right: 20px;
+}
+.search{
+    position: absolute;
+    right: 90px;
+}
+#header .search-icon{
+    color:black;
+    font-size: 25px;
+    line-height: 57px;
+}
+#header .shop-icon{
+    color:black;
+    font-size: 30px;
+    line-height: 57px;
+}
+.search:hover , .shopping:hover {
+    background-color: #b6b3b3;
+}
+
+.shopping .shop-icon{
+    position: relative;
+}
+
+.shopping .hienthishop {
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 350px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shopping>.shop-icon>.hienthishop>ul{
+    list-style-type: none;
+    font-size: 16px;
+    margin: 0;
+}
+
+.shopping>.shop-icon>.hienthishop>ul>h6{
+    font-size: 20px;
+}
+
+.shopping>.shop-icon>.hienthishop>.hienthishop-thanhtoan{
+    text-align: center;
+    line-height: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.shopping .shop-icon:hover .hienthishop{
+    display: block;
+}
+#slider {
+    margin-top: 60px;
+}
+
+#content{
+    padding: 80px 0 40px ;
+}
+
+.content1{
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    grid-column-gap: 28px;
+    padding: 0 25px;
+
+}
+
+#content>.content1>.image-content1{
+    width: 100% ;
+    height: 100%;
+    padding-left: 100px;
+}
+
+#content>.content1>.image-content1>a>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#content>.content1>.text-content1{
+    padding:40px;
+}
+
+#content>.content1>.text-content1>h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1;
+    font-size: 50px;
+    margin-bottom: 28px;
+}
+
+#content>.content1>.text-content1>a{
+    text-decoration: none;
+    color: black;
+    border: black solid 1px;
+    padding: 14px 24px;
+}
+
+#content>.subcon1{
+    margin-top: 50px;
+    padding-bottom: 10px;
+    font-size: 16px ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+#content>.subcon2{
+    color: #ACACAC;
+    font-size: 14px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.heading-section{
+    font-size: 42px;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0;
+}
+.heading-section:hover{
+    color: #808080;
+}
+.content2  {
+    padding-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.left, .right{
+    font-size: 60px;
+    color: rgb(209, 198, 198);
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    display: none;
+}
+.ti-arrow-circle-right{
+    left: 1250px;
+}
+.slider-sanpham{
+    width: 9999px;
+    transition: all 0.5s;
+}
+.slider-sanpham:hover .left{
+    display: block;
+}
+.slider-sanpham:hover .right{
+    display: block;
+}
+.content2 .col-sm-3{
+    float: left;
+    max-width: 292px;
+}
+.sanpham{
+    background-color: gray;
+    width: 100%;
+    height: 335px;
+    margin-bottom: 10px;
+}
+.content3{
+    background-color: #adbabf;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.content3 .sanphamfix{
+    height: 470px;
+}
+.content3 .sanpham-text{
+    color: white;
+}
+.content3 .col-sm-4{
+    float: left;
+    max-width: 390px;
+    margin-right: 10px;
+}
+.circle{
+    top: 350px;
+}
+.content4{
+    padding: 50px 0;
+}
+.content4 .col-sm-3{
+    max-width: 292px;
+}
+.story-img{
+    width: 500px;
+}
+.story-text{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(53, 51, 51);
+    margin-top: 12px;
+}
+#footer{
+    padding: 50px 20px 150px 20px;
+    background-color: rgb(245, 245, 245);
+}
+.col-footer{
+    margin: 50px;
+}
+#footer .title-footer{
+    font-weight: 646;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#footer .content-footer{
+    color: #ACACAC;
+    font-size: 16px;
+    font-weight: 500;
+}
+.icon-footer .iconft{
+    color: #ACACAC;
+    font-size: 30px;
+}
+
+
+
+
+/*Phần New Collection*/
+.sliderNC{
+    position: relative;
+    background-color: rgb(219, 189, 150);
+}
+.videoNC{
+    max-width: 364px;
+
+}
+.video-contentNC{
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
+.vc-headingNC{
+    color: #054C7B;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.vc-meanNC{
+    color: #054C7B;
+    font-size: 20px;
+}
+.content1NC{
+    margin-bottom: 100px;
+}
+.look{
+    width: 240px; 
+    height: 389px;
+    margin-top: 30px;
+} 
+.content1NC>.container>.row>.col-3>h6{
+    color:#054C7B;
+    text-align: center;
+    font-size: 20px;
+}
+.content1-headingNC{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+.paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.content2-1NC{
+    margin: 100px 0;
+}
+.content2-1NC>.container>.row>.col-6>.paragraph{
+    margin-top: 150px;
+}
+.content2-1-imgNC{
+    width: 398px;
+    height: 498px;
+}
+.content2-2-imgNC{
+    width: 323px;
+}
+.content2-2NC>.container>.row>.col-7>.paragraph{
+    margin-top: 100px;
+}
+.content2-2NC{
+    margin-bottom: 200px;
+}
+
+
+/*Phần Sản phẩm*/
+.xemsp{
+    display: flex;
+    flex-direction: row;
+}
+.thongtinsp-img{
+    width: 62%;
+}
+.thongtinsp-text{
+    width: 35%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.thongtinsp-img .bigimg{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.thongtinsp-img>.bigimg>.imgbig-sp{
+    width: 50%;
+}
+.xemsp{
+    margin-bottom: 100px;
+    margin-top: 57px;
+}
+.thongtinsp-text>div{
+    position: sticky;
+
+}
+.thongtinsp-text .choice_color{
+    margin-top: 35px;
+}
+.thongtinsp-text .choice_color .imgmin-sp{
+    width: 70px;
+    height: 77px;
+    margin: 0 5px;
+}
+.thongtinsp-text .choice_color .imgmin-sp:hover{
+    border: black solid 1px;
+}
+.thongtinsp-text .choice_size{
+    margin-top: 35px;
+}
+
+.thongtinsp-text .choice_size .choice_sizesp{
+    display: flex;
+    flex-direction: row;
+    
+}
+.thongtinsp-text>.choice_size>.choice_sizesp>p{
+    padding: 11px 18px;
+    margin: 0 10px;
+    border: solid rgb(194, 185, 185) 1px;
+}
+.thongtinsp-text>.choice_size>.choice_sizesp>p:hover{
+    border-color: black;
+}
+.thongtinsp-text .them{
+    margin-top: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+}
+.thongtinsp-text .them:hover{
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    transition: 0.5s;
+
+}
+.abc{
+    text-decoration: none;
+    color: black;
+}
+.abc:hover{
+    color: black;
+}
+.chitiet{
+    display: flex;
+    margin-bottom: 80px;
+}
+.huongdan>h6{
+    margin-top: 50px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.huongdan>h6:hover{
+    border-bottom: black solid 1px;
+}
+
+
+/*Phần SSStory*/
+.body{
+    padding:0 18%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.body .author-info{
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.body>.author-info>p{
+    font-weight: 700;
+} 
+.body .author-info .name-author{
+    color: #AEAEAE;
+    font-weight: 500;
+}
+.body .content-story{
+    margin: 50px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.table{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/*Phần Daily Better*/
+.bodyDB{
+    margin-top: 100px;
+}
+.text__img{
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.text__img>img{
+    width: 30%;
+}
+.section__layout{
+    padding: 30px 70px;
+    width: 100%;
+}
+.section__layout .video__layout{
+    width: 35%;
+    margin: 0 29% 0 33%;
+}
+.section__layout .img__layout{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.section__layout>.img__layout>img{
+    width: 49.2%;
+}
+.THECOLLECTION{
+    margin-top: 80px;
+    padding: 0 70px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 150px;
+}
+.THECOLLECTION .THECOLLECTION__sp{
+    /* width: 25%; */
+    text-align: center;
+}
+.img-THECOLLECTION{
+    width: 450px;
+    height: 550px;
+}
+.THECOLLECTION__album>.row{
+    margin-left: -150px;
+}
+.THECOLLECTION__album>.row>.THECOLLECTION__sp>p{
+    margin-left: 170px;
+}
+
+.THECOLLECTION__sp:hover .img-THECOLLECTION{
+    width: 480px;
+    height: 580px;
+    transition: 0.5s;
+}
+
