@@ -21,6 +21,7 @@ html{
     right: 0;
     z-index: 1;
     background-color: white;
+    overflow: hidden;
 }
 #header #logo{
     display: block;
