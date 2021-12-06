@@ -21,8 +21,12 @@ html{
     right: 0;
     z-index: 1;
     background-color: white;
-    overflow: hidden;
+    overflow:hidden;
 }
+#header:hover{
+    overflow:inherit;
+}
+
 #header #logo{
     display: block;
     width: 57px;
@@ -482,6 +486,7 @@ html{
 /*Phần Daily Better*/
 .bodyDB{
     margin-top: 100px;
+    width: 100%;
 }
 .text__img{
     width: 100%;
@@ -523,12 +528,13 @@ html{
 .img-THECOLLECTION{
     width: 450px;
     height: 550px;
+    margin: 0 -25px;
 }
 .THECOLLECTION__album>.row{
-    margin-left: -150px;
+    margin-left: -120px;
 }
 .THECOLLECTION__album>.row>.THECOLLECTION__sp>p{
-    margin-left: 170px;
+    margin-left: 115px;
 }
 
 .THECOLLECTION__sp:hover .img-THECOLLECTION{
@@ -536,4 +542,6 @@ html{
     height: 580px;
     transition: 0.5s;
 }
-
+.THECOLLECTION__album>.row>.THECOLLECTION__sp:hover>p{
+    margin-left: 150px;
+}
