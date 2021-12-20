@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contain{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    /* z-index: 1; */
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 0, 0, 0.7);
+    z-index: 1;
+}
+.body{
+    background-color: white;
+    z-index: 1;
+    margin: auto ;
+    margin-left: 55%;
+    /* position: relative;  */
+    border-radius: 7px;
+}
+
+
+.auth-form{
+    width: 500px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+}
+
+.auth-form__container{
+    padding: 0 32px;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.auth-form__heading{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.auth-form__switch-btn a{
+    font-size: 20px;
+    color: rgb(116, 109, 109);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.auth-form__switch-btn:hover a{
+    color: rgb(97, 91, 91);
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+
+
+.auth-form__form{
+    padding: 12px 0;
+}
+
+.auth-form__input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 16px;
+    padding: 0 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus{
+    border-color: gray;
+}
+
+.auth-form__aslide{
+    text-align: center;
+    color: #777;
+    line-height: 1.7;
+    margin: 30px 0;
+    padding: 0 10px;
+}
+.auth-form__policy-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.auth-form__controls {
+    display: flex;
+    justify-content:center;
+    padding-bottom: 20px;
+}
+.auth-form__controls a{
+    text-decoration: none;
+}
+.auth-form__controls-login , .auth-form__controls-back{
+    margin: 0 8px;
+    padding: 7px 30px !important;
+    border-radius: 3px !important;
+}
+
+.auth-form__controls-login:hover , .auth-form__controls-back:hover{
+    background-color: rgb(235, 235, 235) !important;
+    border: none !important;
+    color: #777 !important;
+}
+
+.auth-form__social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-instagram,.fa-facebook,.fa-google{
+    padding: 0 5px;
+}
+.btn-dark,.btn-light,.btn-primary{
+    padding: 7px 24px !important;
+}
+.btn-light{
+    background-color: #dbdbdb !important;
+}
+.btn-light:hover{
+    background-color: #888 !important;
+}
+.btn-dark{
+    background-color: rgb(169, 78, 192) !important;
+    border: none !important;
+}
+.btn-dark:hover{
+    background-color: rgb(178, 45, 211) !important;
+}
+.auth-form__policy-link:hover{
+    color: brown;
+}
+
+.background video{
+    position: fixed;
+    top: -100px;
+    bottom: 0;
+    z-index: -3;
+}
+
+.auth-form__help{
+    display: flex;
+    justify-content: center;
+
+}
+.auth-form__help .auth-form__help-link{
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+}
+.auth-form__help .auth-form__help-link:hover{
+    color: brown;
+}
+
+
+/*MOBILE: WIDTH < 740PX*/
+@media only screen and (max-width: 37.4375em){
+    .body{
+        margin: auto;
+    }
+    .auth-form{
+        width: 100%;
+    }
+    .auth-form__container{
+        padding: 0 30px;
+    }
+    .btn-dark,.btn-light,.btn-primary{
+        padding: 7px 10px !important;
+        font-size: 10px !important;
+    }
+    .auth-form__heading{
+        font-size: 20px;
+    }
+    .auth-form__switch-btn a{
+        font-size: 15px;
+    }
+    .auth-form__header{
+        padding: 20px 0;
+    }
+    .auth-form__input{
+        font-size: 14px;
+    }
+    .auth-form__help-link{
+        font-size: 12px !important;
+    }
+    .btn-outline-secondary{
+        font-size: 10px !important;
+    }
+    .background video{
+        width: 200%;
+    }
+}
+
+
+
+/*TABLET: WIDTH>=740PX AND WIDTH<1024PX*/
+@media only screen and (min-width:37.5em) and (max-width:63.9375em) {
+    .body{
+        margin: auto;
+    }
+    .background video{
+        width: 200%;
+    }
+}

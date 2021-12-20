@@ -1,12 +1,4 @@
-var index=1;
-changeImage=function (){
-    var imgs=["assets/img/slider7.png","assets/img/slider6.jpeg"];
-    document.getElementById('slider-img').src=imgs[index];
-    index++;
-    if(index==2){
-        index=0;
-    }
-}
+
 var KichThuoc=292;
 var chuyenSlide=document.getElementsByClassName("slider-sanpham")[0];
 var chuyen=0;
@@ -48,18 +40,52 @@ setInterval(function () {
  },3000);
 
 
- var KichThuoc2=450;
- var chuyenSlide2=document.getElementsByClassName("row__album")[0];
- var img2=chuyenSlide2.getElementsByClassName("THECOLLECTION__sp");
- var chuyen2=0;
- var max2=KichThuoc2*img2.length-450*3;
- function Next2(){
-    if(chuyen2<max2) chuyen2+=KichThuoc2;
-    else chuyen2=0
-    chuyenSlide2.style.marginLeft='-'+chuyen2+'px';
+
+ /*login */
+function toSend(){
+    var arr=document.getElementsByTagName('input');
+    var email=arr[0].value;
+    var password=arr[1].value;
+    var reg=/^\w+@\w+\.com$/i;
+    if(email==""||password==""){
+        alert('Please fill all fields')
+        return;
+    }
+    if(!reg.test(email)){
+        alert('Email wrong! Please re-enter.')
+        return;
+    }
+    if(password.length<6){
+        alert('Password must be 6 characters')
+        return;
+    }
 }
-function Back2() {
-    if(chuyen2==0) chuyen2=max2;
-    else chuyen2-=KichThuoc2;
-    chuyenSlide2.style.marginLeft='-'+chuyen2+'px';
-}
+
+
+/*registration */
+// function addDate(){
+//     var arr=document.getElementsByTagName('input');
+//     var email=arr[0].value;
+//     var password=arr[1].value;
+//     var password_test=arr[2].value;
+//     var reg=/^\w+@\w+\.com$/i;
+//     if(email==""||password==""||password_test==""){
+//         alert('Please fill all fields')
+//         return;
+//     }
+//     if(!reg.test(email)){
+//         alert('Email wrong! Please re-enter.')
+//         return;
+//     }
+//     if(password.length<6){
+//         alert('Password must be 6 characters')
+//         return;
+//     }
+//     if(password_test!=password){
+//         alert('Password re-enter wrong! Please re-enter.')
+//         return;
+//     }
+    
+// }
+
+/*add_SP */

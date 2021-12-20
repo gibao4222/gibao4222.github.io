@@ -29,13 +29,11 @@ html{
 
 #header #logo{
     display: block;
-    width: 57px;
-    height: 57px;
+    width: 100px;
+    line-height: 57px;
     position: absolute;
-    left: 20px;
+    left: 40px;
     cursor: pointer;
-
-    /* background: url('C:/Users/Admin/Desktop/học/HK1 năm 2/SSStutter/assets/img/logo.png') top center /cover no-repeat; */
 }
 .logo-img{
     height: 100%;
@@ -44,7 +42,7 @@ html{
 #nav{
     display: inline-block;
     position: absolute;
-    left: 80px;
+    left: 150px;
 }
 #nav>li{
     display: inline-block;
@@ -66,10 +64,11 @@ html{
     font-weight: 600;
     font-size: 20px;
 }
-#header .search, .shopping{
+#header .search, .shopping,.user{
     float: right;
     padding: 0 20px;
     cursor: pointer;
+
 }
 .shopping{
     position: absolute;
@@ -77,7 +76,25 @@ html{
 }
 .search{
     position: absolute;
-    right: 90px;
+    right: 150px;
+}
+.search-txt{
+    position: absolute;
+    top: 15px;
+    right: 55px;
+    border-radius:20px ;
+    border:  none;
+    outline: none;
+    padding: 0;
+    transition: 0.4s;
+    width: 0px;
+    /* background-color: #3b3939; */
+    /* color: white; */
+}
+.search:hover>.search-txt{
+    width: 200px;
+    border: 0.1px rgb(139, 134, 134) solid;
+    
 }
 #header .search-icon{
     color:black;
@@ -86,10 +103,22 @@ html{
 }
 #header .shop-icon{
     color:black;
+    font-size: 27px;
+    line-height: 57px;
+}
+.user{
+    position: absolute;
+    right: 90px;
+}
+#header .user a{
+    text-decoration: none;
+}
+#header .user-icon{
+    color: black;
     font-size: 30px;
     line-height: 57px;
 }
-.search:hover , .shopping:hover {
+.search:hover , .shopping:hover, .user:hover {
     background-color: #b6b3b3;
 }
 
@@ -259,6 +288,9 @@ html{
 .content4 .col-sm-3{
     max-width: 292px;
 }
+.content5{
+    margin-top: 40px;
+}
 .story-img{
     width: 500px;
 }
@@ -269,8 +301,9 @@ html{
     margin-top: 12px;
 }
 #footer{
-    padding: 50px 20px 150px 20px;
+    padding: 50px 20px 100px 20px;
     background-color: rgb(245, 245, 245);
+    margin-top: 100px;
 }
 .col-footer{
     margin: 50px;
@@ -321,8 +354,8 @@ html{
     margin-bottom: 100px;
 }
 .look{
-    width: 240px; 
-    height: 389px;
+    width: 230px;
+        height: 350px;
     margin-top: 30px;
 } 
 .content1NC>.container>.row>.col-3>h6{
@@ -354,8 +387,11 @@ html{
 .content2-2-imgNC{
     width: 323px;
 }
-.content2-2NC>.container>.row>.col-7>.paragraph{
+.content2-2NC>.container>.row>.col-6>.paragraph{
     margin-top: 100px;
+}
+.content2-2NC>.container>.row>.col-6{
+    margin-left: 50px;
 }
 .content2-2NC{
     margin-bottom: 200px;
@@ -425,6 +461,10 @@ html{
     background-color: black;
     color: white;
     padding: 15px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
 }
 .thongtinsp-text .them:hover{
     background-color: white;
@@ -545,3 +585,404 @@ html{
 .THECOLLECTION__album>.row>.THECOLLECTION__sp:hover>p{
     margin-left: 150px;
 }
+
+/*MOBILE: WIDTH < 740PX*/
+@media only screen and (max-width: 37.4375em){
+    /*---------------------INDEX--------------------------------*/
+    #nav{
+        left: 10px;
+    }
+    #logo{
+        display: none !important;
+    }
+    .user{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .shopping{
+        display: none;
+    }
+    #header:hover{
+        overflow: hidden;
+    }
+    .content1{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-content1{
+        padding-left: 0 !important;
+        padding-top: 20px !important;
+    }
+    .text-content1>h2{
+        font-size: 30px !important;
+        margin-bottom: 10px !important;
+    }
+    .text-content1>a{
+        padding: 8px 18px !important;
+        font-size: 13px;
+    }
+    .image-content1{
+        padding-left: 0 !important;
+    }
+    .image-content1>a>img{
+        width: 200px !important;
+    }
+    .contain{
+        overflow: hidden !important;
+    }
+    #slider{
+        width: 300% !important;
+        margin-left: -280px;
+    }
+    .heading-section{
+        font-size: 30px !important;
+    }
+    .slider-sanpham:hover .left{
+        display: none;
+    }
+    .slider-sanpham:hover .right{
+        display: none;
+    }
+    .content2 .col-sm-3>a>img{
+        width: 157px;
+        height: 200px;
+    }
+    .content2 .col-sm-3{
+        max-width: 157px;
+        margin: 0 10px;
+    }
+    .content3 .col-sm-4>a>img{
+        width: 270px;
+        height: 340px;
+    }
+    .content3 .col-sm-4{
+        max-width: 280px;
+        margin: 0 5px;
+    }
+    .content4 .row{
+        margin: auto;
+    }
+    .content4 .col-sm-3>a>img{
+        width: 150px;
+        height: 200px;
+    }
+    .content4 .col-sm-3{
+        max-width: 157px;
+        margin: 0 5px;
+    }
+    .content5 .row{
+        margin: auto;
+    }
+    .content5 .col-sm-6>a>img{
+        width: 300px;
+    }
+    .content5 .col-sm-6{
+        margin-bottom: 20px;
+    }
+    .col-footer{
+        margin-left: 0;
+    }
+/*-------------------------------------Daily better--------------------------*/
+    .text__img>img{
+        width: 260px;
+        padding: 0;
+    }
+    .section__layout{
+        padding: 0 10px;
+    }
+    .section__layout .video__layout{
+        width: 70%;
+        margin: auto;
+    }
+    .img__layout{
+        margin-bottom: 20px !important;
+    }
+    .THECOLLECTION{
+        padding: 0;
+        text-align: center;
+    }
+    .row__album{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .THECOLLECTION__sp{
+        margin-left: 10% !important;
+    }
+    .img-THECOLLECTION{
+        /* margin-left: 5% !important; */
+        width: 400px;
+        height: 500px;
+    }
+    .THECOLLECTION__album>.row>.THECOLLECTION__sp>p{
+        /* margin-left: 200px; */
+        margin-left: 10px;
+    }
+    .THECOLLECTION__sp:hover .img-THECOLLECTION{
+        width: 430px;
+        height: 530px;
+        margin-left: 2px;
+    }
+    .THECOLLECTION__sp:hover>p{
+        margin-left: 60px !important;
+        transition: 0.3s;
+    }
+    .THECOLLECTION__sp{
+        width: 400px !important;
+        margin-left: 45px;
+    }
+
+
+/*-----------------------------------------New Collection----------------------------------------------------------*/
+    .content1-headingNC{
+        font-size: 35px;
+    }
+    .content1NC .row{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        margin-left: 10%;
+        /* align-items: center; */
+    }
+    .content1NC .row .look{
+        width: 230px;
+        height: 350px;
+    }
+    .content1NC .row h6{
+        margin-left: 100px !important;
+    }
+    .paragraph{
+        text-align: left;
+        font-size: 13px;
+    }
+    .content2-1NC .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .content2-1NC>.container>.row>.col-4>img{
+        width: 110%;
+        height: 450px;
+    }
+    .content2-1NC>.container>.row>.col-4{
+        width: 350px;
+    }
+    .content2-1NC>.container>.row>.col-6{
+        width: 110%;
+    }
+    .content2-2NC .row{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .content2-2NC>.container>.row>.col-6{
+        margin-left: 0;
+    }
+    .content2-2NC>.container>.row>.col-4{
+        margin-left: -12px;
+    }
+    .content2-2NC>.container>.row>.col-6{
+        width: 110%;
+    }
+    .content2-1NC>.container>.row>.col-6>.paragraph{
+        margin-top: 0px;
+    }
+    .content2-2NC>.container>.row>.col-6>.paragraph{
+        margin-top: 0px;
+    }
+    /* -----------------------------------------------------SSStory---------------------------------------------------------------- */
+    .body{
+        padding: 0 5%;
+    }
+    .body .author-info{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .body .content-story{
+        font-size: 12px;
+        margin: 30px 0;
+    }
+    /* -----------------------------------------------------San Pham Nam---------------------------------------------------------------- */
+    .xemsp{
+        flex-direction: column;
+    }
+    .thongtinsp-img>.bigimg>.imgbig-sp{
+        width: 100%;
+    }
+    .thongtinsp-img{
+        width: 100%;
+    }
+    .thongtinsp-text{
+        width: 100%;
+        margin-left: 5px;
+    }
+    .chitiet{
+        flex-direction: column;
+    }
+    .chitiet img{
+        width: 100% !important;
+    }
+}
+
+
+
+
+/*TABLET: WIDTH>=740PX AND WIDTH<1024PX*/
+@media only screen and (min-width:37.5em) and (max-width:63.9375em) {
+    .contain{
+        width: 100%;
+        overflow: hidden;
+    }
+    .user{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .slider-sanpham:hover .left{
+        display: none;
+    }
+    .slider-sanpham:hover .right{
+        display: none;
+    }
+    .shopping{
+        display: none;
+    }
+    .image-content1{
+        padding-left: 0 !important;
+    }
+    .content4 .col-sm-3>a>img{
+        width: 150px;
+        height: 200px;
+    }
+    .content4 .col-sm-3{
+        margin: 0 20px;
+    }
+    .content2 .col-sm-3>a>img{
+        width: 180px;
+        height: 230px;
+    }
+    .content2 .col-sm-3{
+        margin: 0 10px;
+        max-width: 180px;
+    }
+    .content3 .col-sm-4>a>img{
+        width: 300px;
+        height: 380px;
+    }
+    .content3 .col-sm-4{
+        margin: 0 10px;
+        max-width: 300px;
+    }
+    .content3 .row{
+        margin: auto;
+    }
+    .content4 .col-sm-3{
+        margin: 0;
+    }
+    .content5 .row{
+        margin: auto;
+    }
+    .content5 .col-sm-6>a>img{
+        width: 250px;
+    }
+    .content5 .col-sm-6{
+        max-width: 250px;
+        margin: auto;
+    }
+    .col-footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+/*-------------------------------------Daily better--------------------------*/
+    .text__img>img{
+        width: 260px;
+        padding: 0;
+    }
+    .section__layout{
+        padding: 0 10px;
+    }
+    .section__layout .video__layout{
+        width: 70%;
+        margin: auto;
+    }
+    .img__layout{
+        margin-bottom: 20px !important;
+    }
+    .row__album{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        /* flex-wrap: nowrap; */
+    }
+    .img-THECOLLECTION{
+        margin-left: 8%;
+    }
+    .THECOLLECTION__sp{
+        width: 450px !important;
+        margin-left: 45px;
+    }
+    .THECOLLECTION__sp>p{
+        margin-left: 110px !important;
+    }
+    .THECOLLECTION__sp:hover p{
+        margin-left: 130px !important;
+        transition: 0.5s;
+    }
+
+    /*------------------------------------New Collection------------------------------------------------*/
+    /* .content1NC .row{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+         align-items: center; 
+         flex-wrap: wrap; 
+    } */
+    .content1NC .row .look{
+        width: 230px;
+        height: 350px;
+    }
+    .content1NC .col-3{
+        width: 240px !important;
+    }
+/*-----------------------------------------New Collection----------------------------------------------------------*/
+    .content2-2NC .row{
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .content2-1NC .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content2-1NC>.container>.row>.col-6{
+        width: 110%;
+    }
+    .content2-1NC>.container>.row>.col-4>img{
+        margin-left: -100px;
+        
+    }
+    .content2-2NC>.container>.row>.col-6{
+        width: 110%;
+        margin-left: 0;
+    }
+    .content2-2NC>.container>.row>.col-4>img{
+        margin-left: -70px;
+        
+    }
+    .content2-1NC>.container>.row>.col-6>.paragraph{
+        margin-top: 100px;
+    }
+    .content2-2NC>.container>.row>.col-6>.paragraph{
+        margin-top: 100px;
+    }
+    /* -----------------------------------------------------SSStory---------------------------------------------------------------- */
+    .body{
+        padding: 0 10%;
+    }
+}
+
